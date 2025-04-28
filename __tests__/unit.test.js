@@ -83,3 +83,4 @@ describe('isHexColor', () => {
     expect(isHexColor('#ffff')).toBe(false);
   });
 });
+
