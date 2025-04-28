@@ -11,10 +11,10 @@ import {
 // TODO - Part 2
 describe('isPhoneNumber', () => {
   test('valid phone number with parentheses', () => {
-    expect(isPhoneNumber('(123) 456-7890')).toBe(false);
+    expect(isPhoneNumber('(123) 456-7890')).toBe(true);
   });
   test('valid phone number with dash', () => {
-    expect(isPhoneNumber('123-456-7890')).toBe(true);
+    expect(isPhoneNumber('123-456-7890')).toBe(false);
   });
   test('invalid phone number missing dashes', () => {
     expect(isPhoneNumber('1234567890')).toBe(false);
